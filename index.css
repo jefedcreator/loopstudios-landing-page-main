@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+h1,h2,h3{
+    font-family: Alata;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Josefin Sans;
+}
+
+section{
+    background-image: url('./images/desktop/image-hero.jpg');
+    height: 100vh;
+}
+
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hamburger{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav ul li{
+    margin-left: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+body > section > main > h1{
+    color: white;
+    height: 300px;
+    width: 50%;
+    border: 1px solid white;
+    font-size: 3.7em;
+    padding: 10px;
+}
+
+main{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.interactivity main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interactivity{
+    position: relative;
+}
+
+.interactive-lite{
+    display: none;
+}
+
+body > div.interactivity > main > div:nth-child(3){
+    position: absolute;
+    background-color: white;
+    height: 50%;
+    width: 50%;
+    right: 0%;
+    bottom: 0%;
+    padding: 30px;
+}
+
+body > div.interactivity > main > div > div{
+    position: absolute;
+    background-color: white;
+    height: 50%;
+    width: 50%;
+    right: -30%;
+    bottom: 0%;
+    padding: 30px;
+}
+
+body > div:nth-child(3) > main{
+    align-items: center;
+    display: flex;
+    height: 20vh;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+body > div:nth-child(3) > main > div > h4{
+    border: 1px solid;
+    padding: 10px;
+    cursor: pointer;
+}
+
+body > div:nth-child(3) > main > div > h4:hover{
+    background-color: black;
+    color: white;
+}
+
+.creations{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'div1 div2 div3 div4'
+                         'div5 div6 div7 div8';
+    height: 100vh;
+    grid-gap:10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+body > div.creations > div > p{
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    bottom: 5%;
+    right: 8%;
+    text-align: center;
+}
+
+body > div.creations > div:hover{
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+body > div.creations > div:nth-child(1){
+    grid-area: div1;
+    background-image: url('./images/desktop/image-deep-earth.jpg');
+    background-repeat: no-repeat; 
+    position: relative;
+}
+
+body > div.creations > div:nth-child(2){
+    grid-area: div2;
+    background-image: url('./images/desktop/image-night-arcade.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body > div.creations > div:nth-child(3){
+    grid-area: div3;
+    background-image: url('./images/desktop/image-soccer-team.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body > div.creations > div:nth-child(4){
+    grid-area: div4;
+    background-image: url('./images/desktop/image-grid.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body > div.creations > div:nth-child(5){
+    grid-area: div5;
+    background-image: url('./images/desktop/image-from-above.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body > div.creations > div:nth-child(6){
+    grid-area: div6;
+    background-image: url('./images/desktop/image-pocket-borealis.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body > div.creations > div:nth-child(7){
+    grid-area: div7;
+    background-image: url('./images/desktop/image-curiosity.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body > div.creations > div:nth-child(8){
+    grid-area: div8;
+    background-image: url('./images/desktop/image-fisheye.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+footer{
+    background-color: black;
+    margin-top: 50px;
+}
+
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px
+}
+
+.cover{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cover ul{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.cover ul li{
+    margin-left: 10px;
+}
+
+.cover ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+body > footer > main > div > div:nth-child(2){
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+body > footer > main > nav > ul{
+    padding-left: 0px;
+}
+
+body > footer > main > nav > div{
+    color: white;
+}
+
+article{
+    display: none;
+}
+
+
+@media only screen and (max-width:750px){
+    section{
+        background-image: url('./images/mobile/image-hero.jpg');
+        height: 100vh;
+    }
+
+    body > section > main > nav > img:nth-child(1){
+        z-index: 3;
+    }
+
+    body > section > main{
+        position: relative;
+    }
+
+    nav ul {
+        padding: 0px;
+        position: absolute;
+        transform: translateY(-800px);
+        flex-direction: column;
+        list-style-type: none;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        color: white;
+        align-items: left;
+        justify-content: center;
+        left: 0%;
+        margin-top: 100%;
+        font-size: 2em;
+        transition: 0.5s ease-in-out 0.3s;
+    }
+
+    nav ul.show{
+        transform: translateY(0px);
+    }
+
+    /*nav ul li{
+        margin-left: 10px;
+    }*/
+    
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    nav ul li a:hover{
+        text-decoration: underline;
+    }
+
+    #hamburger{
+        display: block;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    body > section > main > h1{
+        margin-top: 20%;
+        color: white;
+        height: 280px;
+        width: 100%;
+        border: 1px solid white;
+        font-size: 3em;
+        padding: 10px;
+    } 
+    
+    .interactivity main{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .interactive{
+        display: none;
+    }
+
+    .interactive-lite{
+        display: block;
+    }
+
+    .interactive-lite img{
+        width: 100%;
+    }
+    
+    body > div.interactivity > main > div:nth-child(3){
+        text-align: center;
+        position: static;
+        padding: 0px;
+    }
+
+    body > div.creations > div > p{
+        position: absolute;
+        color: white;
+        font-size: 1.2em;
+        bottom: -20%;
+        left: -20%;
+    }
+
+    .creations{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 'div1' 
+                                'div2' 
+                                'div3' 
+                                'div4'
+                                'div5' 
+                                'div6' 
+                                'div7' 
+                                'div8';
+        height: 100vh;
+        grid-gap:10px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    
+body > div.creations > div:nth-child(1){
+    grid-area: div1;
+    background-image: url('./images/mobile/image-deep-earth.jpg');
+    background-repeat: no-repeat; 
+    position: relative;
+}
+
+body > div.creations > div:nth-child(2){
+    grid-area: div2;
+    background-image: url('./images/mobile/image-night-arcade.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body > div.creations > div:nth-child(3){
+    grid-area: div3;
+    background-image: url('./images/mobile/image-soccer-team.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body > div.creations > div:nth-child(4){
+    grid-area: div4;
+    background-image: url('./images/mobile/image-grid.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body > div.creations > div:nth-child(5){
+    grid-area: div5;
+    background-image: url('./images/mobile/image-from-above.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body > div.creations > div:nth-child(6){
+    grid-area: div6;
+    background-image: url('./images/mobile/image-pocket-borealis.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body > div.creations > div:nth-child(7){
+    grid-area: div7;
+    background-image: url('./images/mobile/image-curiosity.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body > div.creations > div:nth-child(8){
+    grid-area: div8;
+    background-image: url('./images/mobile/image-fisheye.jpg');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+footer{
+    display: none;
+}
+
+article{
+    display: flex;
+    align-items: center;
+    display: block;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+}
+
+body > article > main > div:nth-child(1){
+    text-align: center;
+}
+
+body > article > main > div:nth-child(2){
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+body > article > main > div:nth-child(2) > ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+body > article > main > div:nth-child(2) > ul> li a{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+    
+body > article > main > div:nth-child(3){
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+
+body > article > main > div:nth-child(4){
+    text-align: center;
+}
+}
